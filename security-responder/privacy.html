@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz &amp; Haftungsausschluss / Privacy &amp; Disclaimer — Security Responder</title>
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root { --accent: #14a06e; --ink: #1c2b26; --muted: #5b6b65; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--ink); background: #fafcfb; line-height: 1.65; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 24px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .back { display: inline-block; margin-bottom: 24px; color: var(--accent); text-decoration: none; font-weight: 600; }
+  .updated { color: var(--muted); font-size: .85rem; }
+  code { background: #eef3f1; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e3eae7; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Security Responder</a>
+  <h1>Datenschutzerklärung &amp; Haftungsausschluss<br>Privacy Policy &amp; Disclaimer</h1>
+  <p class="updated">Stand / Last updated: 12.06.2026</p>
+
+  <h2>Deutsch</h2>
+  <p><strong>Security Responder (M365 Incident Response for iOS)</strong> („die App“) ist ein iOS-Client zur Eindämmung kompromittierter Microsoft-365-Konten.</p>
+  <ul>
+    <li><strong>Keine Datenerhebung durch den Herausgeber.</strong> Die App hat kein Backend des Herausgebers. Es sind keine Analyse-, Tracking- oder Werbe-SDKs enthalten.</li>
+    <li><strong>Datenfluss.</strong> Die App kommuniziert ausschließlich mit Microsoft-Diensten: Microsoft Entra ID (<code>login.microsoftonline.com</code>) für die Anmeldung und Microsoft Graph (<code>graph.microsoft.com</code>) für Verzeichnisdaten und Aktionen. Angezeigte Daten (Benutzer, Anmelde- und Audit-Protokolle) werden auf dem Gerät dargestellt und weder dauerhaft gespeichert noch an Dritte übertragen.</li>
+    <li><strong>Lokale Speicherung.</strong> Anmelde-Tokens liegen im iOS-Schlüsselbund auf dem Gerät. Der angemeldete Kontoname und die Tenant-ID werden in den lokalen App-Einstellungen gespeichert. Beim Abmelden wird beides entfernt.</li>
+    <li><strong>Delegiertes Handeln.</strong> Die App handelt als der angemeldete Administrator. Jede Aktion wird durch dessen Microsoft-Entra-Rolle autorisiert und von Microsoft im Audit-Log des Tenants protokolliert.</li>
+    <li><strong>Beta-Tests (TestFlight).</strong> Bei Nutzung über Apple TestFlight stellt Apple dem Herausgeber Crash-Berichte, Beta-Nutzungsstatistiken und — falls du Feedback sendest — dein Feedback inklusive E-Mail-Adresse bereit.</li>
+  </ul>
+
+  <h2>English</h2>
+  <p><strong>Security Responder (M365 Incident Response for iOS)</strong> ("the app") is an iOS client for containing compromised Microsoft 365 accounts.</p>
+  <ul>
+    <li><strong>No data collection by the publisher.</strong> The app has no backend operated by the publisher. No analytics, tracking, or advertising SDKs are included.</li>
+    <li><strong>Data flow.</strong> The app communicates exclusively with Microsoft services: Microsoft Entra ID (<code>login.microsoftonline.com</code>) for sign-in and Microsoft Graph (<code>graph.microsoft.com</code>) for directory data and actions. Displayed data (users, sign-in and audit logs) is shown on the device and is not stored permanently or transmitted elsewhere.</li>
+    <li><strong>Local storage.</strong> Sign-in tokens are stored in the iOS keychain on the device. The signed-in account name and tenant ID are stored in the app's local preferences. Signing out removes both.</li>
+    <li><strong>Delegated actions.</strong> The app acts as the signed-in administrator. Every action is authorized by their Microsoft Entra role and logged by Microsoft in the tenant audit log.</li>
+    <li><strong>Beta testing (TestFlight).</strong> If you use the app via Apple TestFlight, Apple provides the publisher with crash reports, beta usage statistics and — if you submit feedback — your feedback including your email address.</li>
+  </ul>
+
+  <h2>Haftungsausschluss</h2>
+  <ul>
+    <li>Die App wird ohne Gewähr („as is“) bereitgestellt. Es besteht keine Garantie für Verfügbarkeit, Fehlerfreiheit oder Eignung für einen bestimmten Zweck.</li>
+    <li>Die App führt eingreifende Aktionen aus — Anmeldungen sperren, Sitzungen widerrufen, Passwörter und MFA-Methoden zurücksetzen. Diese können Benutzer aussperren und erfolgen in eigener Verantwortung des angemeldeten Administrators bzw. seiner Organisation. Vor jeder eingreifenden Aktion ist die korrekte Auswahl des Zielkontos zu prüfen.</li>
+    <li>Eine Haftung für Schäden aus der Nutzung der App ist ausgeschlossen, soweit gesetzlich zulässig; unberührt bleibt die Haftung für Vorsatz, grobe Fahrlässigkeit sowie für Schäden aus der Verletzung von Leben, Körper oder Gesundheit.</li>
+    <li>Microsoft, Microsoft 365, Microsoft Entra und Microsoft Defender sind Marken der Microsoft Corporation. Diese App ist ein unabhängiges Projekt und steht in keiner Verbindung zu Microsoft.</li>
+  </ul>
+
+  <h2>Disclaimer</h2>
+  <ul>
+    <li>The app is provided “as is” without warranty of any kind, including availability, freedom from errors, or fitness for a particular purpose.</li>
+    <li>The app performs intrusive actions — blocking sign-in, revoking sessions, resetting passwords and MFA methods. These can lock users out and are carried out at the sole responsibility of the signed-in administrator and their organization. Verify the target account before any intrusive action.</li>
+    <li>Liability for damages arising from the use of the app is excluded to the extent permitted by law; liability for intent, gross negligence, and injury to life, body, or health remains unaffected.</li>
+    <li>Microsoft, Microsoft 365, Microsoft Entra, and Microsoft Defender are trademarks of Microsoft Corporation. This app is an independent project and is not affiliated with Microsoft.</li>
+  </ul>
+
+  <footer>
+    Kontakt / Contact: <a href="mailto:nils@supplymarket.de">nils@supplymarket.de</a> · <a href="../impressum.html">Impressum</a>
+  </footer>
+</main>
+</body>
+</html>
