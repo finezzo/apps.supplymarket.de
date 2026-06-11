@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz / Privacy — Q-Manager</title>
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root { --accent: #14a06e; --ink: #1c2b26; --muted: #5b6b65; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--ink); background: #fafcfb; line-height: 1.65; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 24px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .back { display: inline-block; margin-bottom: 24px; color: var(--accent); text-decoration: none; font-weight: 600; }
+  .updated { color: var(--muted); font-size: .85rem; }
+  code { background: #eef3f1; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e3eae7; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Q-Manager</a>
+  <h1>Datenschutzerklärung / Privacy Policy</h1>
+  <p class="updated">Stand / Last updated: 11.06.2026</p>
+
+  <h2>Deutsch</h2>
+  <p><strong>Q-Manager (M365 Quarantine Manager for iOS)</strong> („die App“) ist ein iOS-Client für die Microsoft-365-E-Mail-Quarantäne.</p>
+  <ul>
+    <li><strong>Keine Datenerhebung durch den Herausgeber.</strong> Die App hat kein Backend des Herausgebers. Es sind keine Analyse-, Tracking- oder Werbe-SDKs enthalten.</li>
+    <li><strong>Datenfluss.</strong> Die App kommuniziert ausschließlich mit Microsoft-Diensten: Microsoft Entra ID (<code>login.microsoftonline.com</code>) für die Anmeldung und Exchange Online (<code>outlook.office365.com</code>) für die Quarantäne-Daten. Inhalte von Quarantäne-Nachrichten werden auf dem Gerät angezeigt und weder dauerhaft gespeichert noch an Dritte übertragen.</li>
+    <li><strong>Lokale Speicherung.</strong> Anmelde-Tokens liegen im iOS-Schlüsselbund auf dem Gerät. Der angemeldete Kontoname und die Tenant-ID werden in den lokalen App-Einstellungen gespeichert. Beim Abmelden wird beides entfernt.</li>
+    <li><strong>Deine Organisation.</strong> Die Nutzung unterliegt den Microsoft-365-Bedingungen deiner Organisation; Quarantäne-Aktionen (Freigeben/Löschen) protokolliert Microsoft wie jede Admin-Aktion im Audit-Log des Tenants.</li>
+    <li><strong>Beta-Tests (TestFlight).</strong> Bei Nutzung über Apple TestFlight stellt Apple dem Herausgeber Crash-Berichte, Beta-Nutzungsstatistiken und — falls du Feedback sendest — dein Feedback inklusive E-Mail-Adresse bereit. Details regeln die TestFlight-Bedingungen von Apple.</li>
+  </ul>
+
+  <h2>English</h2>
+  <p><strong>Q-Manager (M365 Quarantine Manager for iOS)</strong> ("the app") is an iOS client for the Microsoft 365 email quarantine.</p>
+  <ul>
+    <li><strong>No data collection by the publisher.</strong> The app has no backend operated by the publisher. No analytics, tracking, or advertising SDKs are included.</li>
+    <li><strong>Data flow.</strong> The app communicates exclusively with Microsoft services: Microsoft Entra ID (<code>login.microsoftonline.com</code>) for sign-in and Exchange Online (<code>outlook.office365.com</code>) for quarantine data. Quarantine message contents are displayed on the device and are not stored permanently or transmitted elsewhere.</li>
+    <li><strong>Local storage.</strong> Sign-in tokens are stored in the iOS keychain on the device. The signed-in account name and tenant ID are stored in the app's local preferences. Signing out removes both.</li>
+    <li><strong>Your organization.</strong> Use of the app is subject to your organization's Microsoft 365 terms; quarantine actions (release/delete) are logged by Microsoft in your tenant's audit log like any admin action.</li>
+    <li><strong>Beta testing (TestFlight).</strong> If you use the app via Apple TestFlight, Apple provides the publisher with crash reports, beta usage statistics and — if you submit feedback — your feedback including your email address. See Apple's TestFlight terms for details.</li>
+  </ul>
+
+  <footer>
+    Kontakt / Contact: <a href="mailto:nils@supplymarket.de">nils@supplymarket.de</a>
+  </footer>
+</main>
+</body>
+</html>
