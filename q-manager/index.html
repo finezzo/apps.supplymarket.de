@@ -21,6 +21,13 @@
   .links a:hover { text-decoration: underline; }
   footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e3eae7; color: var(--muted); font-size: .85rem; }
   .en { color: var(--muted); font-size: .95rem; }
+  .shots { display: flex; gap: 22px; overflow-x: auto; margin: 8px -24px 28px; padding: 8px 24px 18px;
+           scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+  .shot { flex: 0 0 auto; scroll-snap-align: center; margin: 0; text-align: center; }
+  .device { width: 216px; background: #0b0b0d; border-radius: 38px; padding: 9px;
+            box-shadow: 0 12px 34px rgba(20,160,110,.18), 0 2px 8px rgba(0,0,0,.12); }
+  .device img { width: 100%; display: block; border-radius: 30px; }
+  .shot figcaption { margin-top: 10px; font-size: .9rem; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -36,6 +43,22 @@
     <li>Sichere Vorschau (kein JavaScript, keine externen Inhalte)</li>
     <li>Nachrichten freigeben oder löschen, Freigabe-Anfragen genehmigen/ablehnen</li>
   </ul>
+
+  <section class="shots" aria-label="Screenshots">
+    <figure class="shot">
+      <div class="device"><img src="screens/01-liste.png" alt="Quarantäne-Liste mit farbigen Kategorie-Badges" loading="lazy"></div>
+      <figcaption>Quarantäne immer dabei</figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="device"><img src="screens/02-forensik.png" alt="Detailansicht mit SPF-, DKIM- und DMARC-Ergebnis" loading="lazy"></div>
+      <figcaption>SPF, DKIM &amp; DMARC auf einen Blick</figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="device"><img src="screens/03-freigabe.png" alt="Freigabe-Anfrage genehmigen oder ablehnen" loading="lazy"></div>
+      <figcaption>Freigabe-Anfragen direkt bearbeiten</figcaption>
+    </figure>
+  </section>
+
   <p class="en">Manage your Microsoft 365 email quarantine on iPhone: review, analyze (SPF/DKIM/DMARC, filter verdict), release and delete quarantined messages, and handle release requests.</p>
 
   <p class="links">
