@@ -13,6 +13,7 @@
   main { max-width: 640px; margin: 0 auto; padding: 48px 24px 64px; }
   h1 { font-size: 1.6rem; margin: 0 0 8px; }
   h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  h3 { font-size: 1rem; margin: 20px 0 6px; }
   p, li { margin: 0 0 12px; }
   ul { padding-left: 20px; }
   a { color: var(--accent); }
@@ -26,28 +27,45 @@
 <main>
   <a class="back" href="./">← Q-Manager</a>
   <h1>Datenschutzerklärung &amp; Haftungsausschluss<br>Privacy Policy &amp; Disclaimer</h1>
-  <p class="updated">Stand / Last updated: 11.06.2026</p>
+  <p class="updated">Stand / Last updated: 21.06.2026</p>
 
   <h2>Deutsch</h2>
   <p><strong>Q-Manager (M365 Quarantine Manager for iOS)</strong> („die App“) ist ein iOS-Client für die Microsoft-365-E-Mail-Quarantäne.</p>
+
+  <h3>Verantwortlicher</h3>
+  <p>Nils Goldkuhle, In der Aue 3, 46342 Velen, Deutschland — E-Mail: <a href="mailto:nils@supplymarket.de">nils@supplymarket.de</a> (siehe auch <a href="../impressum.html">Impressum</a>).</p>
+  <p><strong>Wichtig zur Rollenverteilung:</strong> Die App ist ein Administrationswerkzeug. Die Inhalte der Quarantäne-Nachrichten (Betreff, Absender, Empfänger, Header, Nachrichtentext) sind personenbezogene Daten des Microsoft-365-Tenants deiner Organisation. Für diese Daten ist <strong>deine Organisation der Verantwortliche</strong>, Microsoft ist deren Auftragsverarbeiter. Der Herausgeber dieser App empfängt, speichert oder verarbeitet diese Daten nicht auf eigenen Servern — er betreibt keine. Verantwortlicher ist der Herausgeber nur für die unten beschriebenen minimalen App-/Website-Daten.</p>
+
+  <h3>Verarbeitung</h3>
   <ul>
     <li><strong>Keine Datenerhebung durch den Herausgeber.</strong> Die App hat kein Backend des Herausgebers. Es sind keine Analyse-, Tracking- oder Werbe-SDKs enthalten.</li>
-    <li><strong>Datenfluss.</strong> Die App kommuniziert ausschließlich mit Microsoft-Diensten: Microsoft Entra ID (<code>login.microsoftonline.com</code>) für die Anmeldung und Exchange Online (<code>outlook.office365.com</code>) für die Quarantäne-Daten. Inhalte von Quarantäne-Nachrichten werden auf dem Gerät angezeigt und weder dauerhaft gespeichert noch an Dritte übertragen.</li>
-    <li><strong>Lokale Speicherung.</strong> Anmelde-Tokens liegen im iOS-Schlüsselbund auf dem Gerät. Der angemeldete Kontoname und die Tenant-ID werden in den lokalen App-Einstellungen gespeichert. Beim Abmelden wird beides entfernt.</li>
+    <li><strong>Datenfluss.</strong> Die App kommuniziert ausschließlich mit Microsoft-Diensten: Microsoft Entra ID (<code>login.microsoftonline.com</code>) für die Anmeldung und Exchange Online (<code>outlook.office365.com</code>) für die Quarantäne-Daten. Inhalte von Quarantäne-Nachrichten werden auf dem Gerät angezeigt und weder dauerhaft gespeichert noch an Dritte übertragen. Je nach Standort deines Tenants kann Microsoft diese Daten innerhalb oder außerhalb der EU nach den eigenen Bedingungen verarbeiten.</li>
+    <li><strong>Lokale Speicherung &amp; Rechtsgrundlagen.</strong> Anmelde-Tokens liegen im iOS-Schlüsselbund auf dem Gerät (Art. 6 Abs. 1 lit. b DSGVO — Erbringung der angeforderten Anmeldung). Angemeldeter Kontoname und Tenant-ID werden in den lokalen App-Einstellungen gespeichert, um zwischen Tenants wechseln zu können (Art. 6 Abs. 1 lit. f DSGVO — berechtigtes Interesse an einem nutzbaren Multi-Tenant-Werkzeug). Beim Abmelden wird beides entfernt.</li>
     <li><strong>Deine Organisation.</strong> Die Nutzung unterliegt den Microsoft-365-Bedingungen deiner Organisation; Quarantäne-Aktionen (Freigeben/Löschen) protokolliert Microsoft wie jede Admin-Aktion im Audit-Log des Tenants.</li>
     <li><strong>Beta-Tests (TestFlight).</strong> Bei Nutzung über Apple TestFlight stellt Apple dem Herausgeber Crash-Berichte, Beta-Nutzungsstatistiken und — falls du Feedback sendest — dein Feedback inklusive E-Mail-Adresse bereit. Details regeln die TestFlight-Bedingungen von Apple.</li>
   </ul>
 
+  <h3>Deine Rechte</h3>
+  <p>Dir stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu (Art. 15–21 DSGVO). Da der Herausgeber keine personenbezogenen Daten über dich vorhält, verweisen Anfragen in der Regel auf die lokal auf deinem Gerät gespeicherten Daten (über „Abmelden“ bzw. Löschen der App entfernbar) oder auf deine Organisation / Microsoft für die Tenant-Daten. Außerdem hast du das Recht, dich bei einer Aufsichtsbehörde zu beschweren (Art. 77 DSGVO).</p>
+
   <h2>English</h2>
   <p><strong>Q-Manager (M365 Quarantine Manager for iOS)</strong> ("the app") is an iOS client for the Microsoft 365 email quarantine.</p>
+
+  <h3>Controller</h3>
+  <p>Nils Goldkuhle, In der Aue 3, 46342 Velen, Germany — email: <a href="mailto:nils@supplymarket.de">nils@supplymarket.de</a> (see also <a href="../impressum.html">Legal Notice</a>).</p>
+  <p><strong>Important on roles:</strong> The app is an administration tool. The contents of quarantined messages (subjects, senders, recipients, headers, bodies) are personal data of your organization's Microsoft 365 tenant. For that data, <strong>your organization is the controller</strong> and Microsoft is its processor. The publisher of this app neither receives, stores nor processes that data on its own servers — it has none. The publisher is controller only for the minimal app/website data described below.</p>
+
+  <h3>Processing</h3>
   <ul>
     <li><strong>No data collection by the publisher.</strong> The app has no backend operated by the publisher. No analytics, tracking, or advertising SDKs are included.</li>
-    <li><strong>Data flow.</strong> The app communicates exclusively with Microsoft services: Microsoft Entra ID (<code>login.microsoftonline.com</code>) for sign-in and Exchange Online (<code>outlook.office365.com</code>) for quarantine data. Quarantine message contents are displayed on the device and are not stored permanently or transmitted elsewhere.</li>
-    <li><strong>Local storage.</strong> Sign-in tokens are stored in the iOS keychain on the device. The signed-in account name and tenant ID are stored in the app's local preferences. Signing out removes both.</li>
+    <li><strong>Data flow.</strong> The app communicates exclusively with Microsoft services: Microsoft Entra ID (<code>login.microsoftonline.com</code>) for sign-in and Exchange Online (<code>outlook.office365.com</code>) for quarantine data. Quarantine message contents are displayed on the device and are not stored permanently or transmitted elsewhere. Depending on your tenant's location, Microsoft may process this data inside or outside the EU under its own terms.</li>
+    <li><strong>Local storage &amp; legal bases.</strong> Sign-in tokens are stored in the iOS keychain (Art. 6(1)(b) GDPR — performing the sign-in you requested). The signed-in account name and tenant ID are stored in the app's local preferences so you can switch tenants (Art. 6(1)(f) GDPR — legitimate interest in a usable multi-tenant tool). Signing out removes both.</li>
     <li><strong>Your organization.</strong> Use of the app is subject to your organization's Microsoft 365 terms; quarantine actions (release/delete) are logged by Microsoft in your tenant's audit log like any admin action.</li>
     <li><strong>Beta testing (TestFlight).</strong> If you use the app via Apple TestFlight, Apple provides the publisher with crash reports, beta usage statistics and — if you submit feedback — your feedback including your email address. See Apple's TestFlight terms for details.</li>
   </ul>
 
+  <h3>Your rights</h3>
+  <p>You have the right to access, rectification, erasure, restriction, data portability and to object (Art. 15–21 GDPR). Because the publisher holds no personal data about you, most requests are answered by pointing to the data stored locally on your device (removable via Sign out / by deleting the app) or to your organization / Microsoft for the tenant data. You also have the right to lodge a complaint with a supervisory authority (Art. 77 GDPR).</p>
 
   <h2>Haftungsausschluss</h2>
   <ul>
@@ -68,7 +86,7 @@
   </ul>
 
   <footer>
-    Kontakt / Contact: <a href="mailto:nils@supplymarket.de">nils@supplymarket.de</a> · <a href="../impressum.html">Impressum</a>
+    Kontakt / Contact: <a href="mailto:nils@supplymarket.de">nils@supplymarket.de</a> · <a href="terms.html">Nutzungsbedingungen / Terms</a> · <a href="../impressum.html">Impressum</a>
   </footer>
 </main>
 </body>
