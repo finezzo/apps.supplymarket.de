@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FormsAutomator — Formular-Kiosk für iPad</title>
+<meta name="description" content="Verwandeln Sie ein iPad in einen Formular-Kiosk: PDFs ausfüllen, direkt im Dokument unterschreiben und automatisch an SharePoint, FTP, SMB oder E-Mail zustellen — auch offline.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root { --accent: #14a06e; --ink: #1c2b26; --muted: #5b6b65; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--ink); background: #fafcfb; line-height: 1.6; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 24px 64px; }
+  .icon { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 8px 24px rgba(20,160,110,.25); }
+  h1 { margin: 24px 0 4px; font-size: 1.9rem; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  p { margin: 0 0 16px; }
+  ul { padding-left: 20px; }
+  .links a { display: inline-block; margin-right: 16px; color: var(--accent); font-weight: 600; text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e3eae7; color: var(--muted); font-size: .85rem; }
+  .en { color: var(--muted); font-size: .95rem; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 170px));
+           justify-content: center; gap: 18px; margin: 8px 0 28px; }
+  .shot { margin: 0; text-align: center; }
+  .device { background: #0b0b0d; border-radius: 24px; padding: 6px;
+            box-shadow: 0 10px 28px rgba(20,160,110,.18), 0 2px 8px rgba(0,0,0,.12); }
+  .device img { width: 100%; display: block; border-radius: 18px; }
+  .shot figcaption { margin-top: 8px; font-size: .82rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="icon.png" alt="FormsAutomator App-Icon">
+  <h1>FormsAutomator</h1>
+  <p class="sub">Formular-Kiosk für iPad — ausfüllen, unterschreiben, zustellen</p>
+
+  <p>Verwandeln Sie ein iPad in einen professionellen <strong>Formular-Kiosk</strong> — für Empfang, Werkstor, Baustelle, Praxis oder Veranstaltung:</p>
+  <ul>
+    <li>Beliebige ausfüllbare PDFs (AcroForm) importieren und im gesperrten Kiosk-Modus ausfüllen lassen</li>
+    <li>Direkt im Dokument unterschreiben — die Unterschrift wird fest ins PDF eingebettet</li>
+    <li>Automatisch zustellen an SharePoint/Microsoft 365, FTP/FTPS, SMB, E-Mail oder eine eigene REST-/Webhook-Schnittstelle</li>
+    <li>Offline-sicher: nichts geht verloren, alles wird automatisch nachgeliefert</li>
+    <li>Vom Einzelgerät bis zur Flotte: Übernahme per QR-Code oder zentral per MDM (Intune, Jamf, Mosyle)</li>
+  </ul>
+
+  <section class="shots" aria-label="Screenshots">
+    <figure class="shot">
+      <div class="device"><img src="screens/01-start.png" alt="Kiosk-Startbildschirm mit Formular-Auswahl" loading="lazy"></div>
+      <figcaption>Formular wählen</figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="device"><img src="screens/02-formular.png" alt="PDF-Formular ausfüllen mit Unterschriften-Fläche" loading="lazy"></div>
+      <figcaption>Ausfüllen &amp; unterschreiben</figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="device"><img src="screens/03-anwesenheit.png" alt="Anwesenheits-Kiosk mit Ankommen und Gehen" loading="lazy"></div>
+      <figcaption>Anwesenheit &amp; Besucher</figcaption>
+    </figure>
+  </section>
+
+  <p class="en">Turn an iPad into a form kiosk: fill in PDF forms, sign right in the document and deliver automatically to SharePoint, FTP/FTPS, SMB, email or your own REST/webhook endpoint — offline-proof, from a single device to entire MDM-managed fleets.</p>
+
+  <p class="links">
+    <a href="privacy.html">Datenschutz / Privacy</a> <a href="../">Alle Apps</a>
+  </p>
+
+  <footer>
+    Kontakt / Contact: <a href="mailto:nils@supplymarket.de">nils@supplymarket.de</a> · <a href="../impressum.html">Impressum</a>
+  </footer>
+</main>
+</body>
+</html>
